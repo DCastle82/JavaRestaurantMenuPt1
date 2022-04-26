@@ -19,15 +19,20 @@ public class Main {
 //        System.out.println(itemTwo.getCategory());
 //        System.out.println(itemTwo.isNew());
 
+        MenuItem itemThree = new MenuItem(12.99, "seafood", "entree");
+        MenuItem itemFour = new MenuItem(19.99, "primerib", "entree");
+        MenuItem itemFive = new MenuItem(6.99, "fried pickles", "appetizer");
+
         Menu restaurantMenuOne = new Menu();
         System.out.println(restaurantMenuOne);
         System.out.println(restaurantMenuOne.getLastUpdated());
         System.out.println(restaurantMenuOne.getMenuItems());
 
-        Menu restaurantMenuTwo = new Menu(new ArrayList<MenuItem>(Arrays.asList(itemOne, itemTwo)));
-        System.out.println(restaurantMenuTwo);
+        Menu restaurantMenuTwo = new Menu(new ArrayList<MenuItem>(Arrays.asList(itemOne, itemTwo, itemThree, itemFour, itemFive)));
+        System.out.println(restaurantMenuTwo.toString());
         System.out.println(restaurantMenuTwo.getLastUpdated());
         System.out.println(restaurantMenuTwo.getMenuItems());
+
 
         // I didn't test out my setters, but feel free!
     }

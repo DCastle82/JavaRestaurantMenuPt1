@@ -7,6 +7,9 @@ public class MenuItem {
     private String category;
     private boolean isNew = true;
 
+    public String toString(){
+        return "Price :" + price + "\n" + "Menu Item: " + description + "\n" + "Category: " + category +"\n";
+    };
 
     public MenuItem(double price, String description, String category) {
         this.price = price;
